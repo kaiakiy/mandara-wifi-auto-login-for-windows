@@ -7,7 +7,7 @@ Not well-tested. Use it at your own risk.
 
 # Binary
 
-https://drive.google.com/open?id=1azv9US9uwn0xO3get2idtfwJBbRlBu6m
+https://databox.naist.jp/f/276568
 
 # Command line options
 
