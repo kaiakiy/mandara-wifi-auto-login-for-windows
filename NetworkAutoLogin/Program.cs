@@ -16,7 +16,7 @@ namespace NetworkAutoLogin
         static string Password;
         static string AdapterName = "Wi-Fi";
         static string CaptiveUrlPattern = @"\Ahttps?://[^/]*?\.naist\.jp/.+";  // regex
-        static string LoginUrl = "https://aruba.naist.jp/cgi-bin/login?cmd=authenticate&user={0}&password={1}";  // regex
+        static string LoginUrl = "https://aruba.naist.jp/cgi-bin/login?cmd=authenticate&user={0}&password={1}";
         static int Timeout = 5000;  // msec
 
         static void Main(string[] args)
@@ -130,8 +130,7 @@ namespace NetworkAutoLogin
 
         static bool Login()
         {
-            string url = "https://aruba.naist.jp/cgi-bin/login?cmd=authenticate&user=" + User + "&password=" + Password;
-            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(string.Format(LoginUrl, User, Password));
             request.Timeout = Timeout;
 
             try
