@@ -7,7 +7,7 @@ Not well-tested. Use it at your own risk.
 
 # Binary
 
-https://databox.naist.jp/f/276568
+http://rv-nasbi.naist.jp:8080/share.cgi?ssid=0gicMNE
 
 # Command line options
 
